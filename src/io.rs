@@ -68,7 +68,7 @@ pub fn config_pin_input(pin: u8) {
     }
 }
 
-pub fn config_pin_pullup(pin: u8) {
+pub fn config_pin_input_pullup(pin: u8) {
     match map_pin_to_port(pin) {
         Port::B(n) => {
             crate::bit_clear!(DDRB, n);
