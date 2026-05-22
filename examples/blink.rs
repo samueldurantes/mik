@@ -11,7 +11,7 @@ pub extern "C" fn main() -> ! {
 
     loop {
         io::pin_toggle(LED_PIN);
-        unsafe { delay_ms(250) };
+        delay_ms(250);
     }
 }
 

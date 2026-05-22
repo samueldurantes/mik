@@ -6,7 +6,7 @@ use core::arch::asm;
 pub mod io;
 pub mod macros;
 
-pub unsafe fn delay_ms(mut ms: u16) {
+pub fn delay_ms(mut ms: u16) {
     while ms != 0 {
         unsafe {
             asm!(
