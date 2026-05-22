@@ -1,0 +1,16 @@
+[package]
+name = "mik"
+version = "0.0.1"
+edition = "2024"
+
+[profile.dev]
+panic = "abort"
+opt-level = "s"
+
+[profile.release]
+panic = "abort"
+opt-level = "s"
+lto = true
+strip = true
+
+[dependencies]
