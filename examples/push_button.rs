@@ -3,8 +3,8 @@
 
 use mik::io;
 
-const BUTTON_PIN: u8 = 2;
-const LED_PIN: u8 = 13;
+const BUTTON_PIN: u8 = 10;
+const LED_PIN: u8 = 8;
 
 #[unsafe(no_mangle)]
 pub extern "C" fn main() -> ! {
